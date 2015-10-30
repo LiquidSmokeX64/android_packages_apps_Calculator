@@ -36,6 +36,9 @@ LOCAL_AAPT_FLAGS := --auto-add-overlay \
 
 LOCAL_PROGUARD_FLAG_FILES := proguard.flags
 
+# Enable dexpreopt to speed boot time
+WITH_DEXPREOPT := true
+
 include $(BUILD_PACKAGE)
 
 include $(CLEAR_VARS)
